@@ -1,21 +1,31 @@
-//* Fonts */
+.logo {
+  width:150px; /* Sesuaikan nilai lebar sesuai keinginan Anda */
+  height: auto; /* Agar tinggi gambar menyesuaikan secara proporsional */
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.center-image img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+}
+
+/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Montserrat",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
-.logo {
-  width:150px; /* Sesuaikan nilai lebar sesuai keinginan Anda */
-  height: auto; /* Agar tinggi gambar menyesuaikan secara proporsional */
-}
-
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #edd79e; /* Background color for the entire website, including individual sections */
-  --default-color: #000000; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #F2994A; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #D8B7F2; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #ddedea; /* Background color for the entire website, including individual sections */
+  --default-color: #555555; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffc7b9; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #50d8af; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -38,10 +48,10 @@
 }
 
 .dark-background {
-  --background-color: #F2C2B7;
+  --background-color: #ffc7b9;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #0e2d89;
+  --surface-color: #ffc7b9;
   --contrast-color: #ffffff;
 }
 
@@ -79,15 +89,7 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-.center-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-.center-image img {
-  max-width: 100%; /* Ensure the image is responsive */
-  height: auto;
-}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
